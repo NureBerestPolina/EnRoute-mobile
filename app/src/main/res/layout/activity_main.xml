@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="0px"
+        android:layout_marginTop="70dp"
+        android:paddingTop="0px"
+        android:paddingBottom="0px"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comfortaa"
+        android:layout_marginTop="25dp"
+        android:text="@string/motto"
+        android:textAlignment="center"
+        android:textColor="#E1000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/app_motto"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="casual"
+        android:shadowColor="@color/green"
+        android:shadowDx="0.3"
+        android:shadowDy="0.3"
+        android:shadowRadius="5"
+        android:text="En Route"
+        android:textAlignment="center"
+        android:textColor="#E1000000"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/main_signup_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_login_btn"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/comfortaa"
+        android:padding="17dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/green"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/main_login_btn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/comfortaa"
+        android:padding="17dp"
+        android:text="@string/log_in"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/green"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        app:strokeWidth="3dp"/>
+
+</RelativeLayout>

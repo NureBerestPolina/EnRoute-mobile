@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">EnRoute</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome_message">"Вітаємо!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">Login failed</string>
+    <string name="universal_fail">Упс! Щось пішло не так</string>
+    <string name="validation_fail">Уведення некоректне!</string>
+
+    <string name="motto">Приносимо комфорт на твій життєвий шлях!</string>
+    <string name="sign_up">Зареєструватися</string>
+    <string name="log_in">Увійти в акаунт</string>
+
+    <string name="enter_email">Уведіть email</string>
+    <string name="enter_password">Уведіть пароль</string>
+    <string name="enter_name">Уведіть ваше повне ім\'я</string>
+    <string name="sign_up_description">Заповніть форму для реєстрації в системі SmartFood</string>
+
+    <string name="header_user_orders">Мої замовлення</string>
+    <string name="header_user_recommendations">Рекомендації</string>
+
+    <string name="no_orders">Ви ще не зробили жодного замовлення!</string>
+    <string name="no_recommendations">Наразі для Вас немає рекомендацій. Час спробувати щось новеньке!</string>
+    <string name="about_order">Ваше замовлення </string>
+    <string name="repeat_order">Повторити замовлення!</string>
+    <string name="order_status">Статус замовлення: </string>
+    <string name="currency">грн</string>
+    <string name="amount">шт.</string>
+    <string name="order_title">Про замовлення</string>
+    <string name="recommendation_title">Рекомендуємо замовити</string>
+    <string name="supply_title">Необхідно поповнити запаси</string>
+    <string name="make_delivery_report">Доставлено!</string>
+    <string name="pick_up">Забрати</string>
+    <string name="close">Закрити</string>
+
+    <string name="succesful_dish_pick_up">Смачного!</string>
+    <string name="failed_dish_pick_up">Щось пішло не так при відкритті холодильника. Спробуйте ще!</string>
+
+    <string name="header_add_order">Нове замовлення</string>
+    <string name="select_filial">Оберіть Ваш офіс</string>
+    <string name="select_dish">Оберіть страву для замовлення</string>
+    <string name="input_count">Кількість (шт.):</string>
+    <string name="total">Вартість замовлення:</string>
+    <string name="make_order">Замовити!</string>
+    <string name="succesful_order">Замовлення прийняте!</string>
+    <string name="failed_order">Щось пішло не так. Спробуйте ще!</string>
+    <string name="pick_up_in_fridge">Заберіть в холодильнику:</string>
+
+    <string name="header_supplier_home">Необхідно доставити</string>
+    <string name="fridge_placement">Розташування холодильника:</string>
+    <string name="no_supplies_needed">Наразі у всіх холодильниках, які ви обслуговуєте, достатні запаси страв.</string>
+    <string name="incorrect_number_format">Некоректне введення. Уведіть ціле число!</string>
+    <string name="approve">Закінчити </string>
+    <string name="input_amont_title">Уведіть к-сть доставленої страви</string>
+</resources>

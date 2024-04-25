@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">EnRoute</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome_message">Welcome!</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">Login failed</string>
+    <string name="universal_fail">Oops! Something went wrong</string>
+    <string name="validation_fail">Incorrect input. Try again</string>
+
+    <string name="motto">We deliver comfort to your life way!</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log into account</string>
+
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="sign_up_description">Fill in the form to take advantage of SmartFood</string>
+
+    <string name="header_user_orders">My orders</string>
+    <string name="header_user_recommendations">Recommended</string>
+
+    <string name="no_orders">You have got no orders yet!</string>
+    <string name="no_recommendations">You have got no recommendations yet!</string>
+    <string name="order_title">Order info</string>
+    <string name="recommendation_title">Recommended order</string>
+    <string name="supply_title">Needs to be delivered</string>
+    <string name="about_order">Your order </string>
+    <string name="order_status">Order status: </string>
+    <string name="currency">UAH</string>
+    <string name="amount">items</string>
+    <string name="make_delivery_report">Delivered!</string>
+    <string name="pick_up">Pick up</string>
+    <string name="repeat_order">Repeat!</string>
+    <string name="close">Close</string>
+
+    <string name="succesful_dish_pick_up">Enjoy your meal!</string>
+    <string name="failed_dish_pick_up">Something went wrong while opening the fridge. Try again!</string>
+
+    <string name="header_add_order">Place order</string>
+    <string name="select_filial">Select company filial</string>
+    <string name="select_dish">Select a dish to order</string>
+    <string name="input_count">Amount (in items):</string>
+    <string name="total">Order total:</string>
+    <string name="make_order">Order now!</string>
+    <string name="succesful_order">Order placed successfully!</string>
+    <string name="failed_order">Something went wrong. Try again!</string>
+    <string name="pick_up_in_fridge">Pick up in fridge:</string>
+
+    <string name="header_supplier_home">Supplies needed</string>
+    <string name="fridge_placement">Fridge placement description: </string>
+    <string name="no_supplies_needed">There are currently no fridges, where the supply is needed.</string>
+    <string name="incorrect_number_format">Incorrect number format. Input an integer value, please!</string>
+    <string name="approve">Finish </string>
+    <string name="input_amont_title">Input delivered amount of dish</string>
+</resources>
