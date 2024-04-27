@@ -19,7 +19,7 @@
     <string name="enter_email">Enter your email</string>
     <string name="enter_password">Enter your password</string>
     <string name="enter_name">Enter your name</string>
-    <string name="sign_up_description">Fill in the form to take advantage of SmartFood</string>
+    <string name="sign_up_description">Fill in the form to take advantage of En Route</string>
 
     <string name="header_user_orders">My orders</string>
     <string name="header_user_recommendations">Recommended</string>

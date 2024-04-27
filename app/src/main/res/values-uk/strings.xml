@@ -19,7 +19,7 @@
     <string name="enter_email">Уведіть email</string>
     <string name="enter_password">Уведіть пароль</string>
     <string name="enter_name">Уведіть ваше повне ім\'я</string>
-    <string name="sign_up_description">Заповніть форму для реєстрації в системі SmartFood</string>
+    <string name="sign_up_description">Заповніть форму для реєстрації в системі En Route</string>
 
     <string name="header_user_orders">Мої замовлення</string>
     <string name="header_user_recommendations">Рекомендації</string>
