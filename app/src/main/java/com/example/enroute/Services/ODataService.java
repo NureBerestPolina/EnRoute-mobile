@@ -122,7 +122,7 @@ public class ODataService<T> {
             return null; // "value" array not found
         }
 
-        int endIndex = json.indexOf("]", startIndex + 1);
+        int endIndex = json.lastIndexOf("]");
         if (endIndex == -1) {
             return null; // Unable to find the end of the "value" array
         }

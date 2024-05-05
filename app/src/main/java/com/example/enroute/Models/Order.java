@@ -112,6 +112,14 @@ public class Order {
     @NonNull
     @Override
     public String toString() {
-        return ":)";
+        StringBuilder res = new StringBuilder();
+
+        for (OrderItem orderItem:
+             items) {
+            res.append(orderItem.toString() + "\n");
+        }
+
+        res.append("\n" + this.getAssignedCell().getCounter().getAddress());
+        return res.toString();
     }
 }

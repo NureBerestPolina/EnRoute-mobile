@@ -1,5 +1,7 @@
 package com.example.enroute.Models;
 
+import androidx.annotation.NonNull;
+
 import java.util.UUID;
 
 public class OrderItem {
@@ -66,4 +68,17 @@ public class OrderItem {
     private Good goodOrdered;
     private UUID orderId;
     private Order order;
+
+    @NonNull
+    @Override
+    public String toString() {
+        return this.goodOrdered.getName()
+                + " ("
+                + this.count
+                + " "
+                + this.goodOrdered.getMeasurementUnit()
+                + " x "
+                + this.goodOrdered.getPrice()
+                + ")";
+    }
 }
