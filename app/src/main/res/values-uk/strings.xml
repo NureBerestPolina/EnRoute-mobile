@@ -38,12 +38,14 @@
     <string name="pick_up">Забрати</string>
     <string name="close">Закрити</string>
 
-    <string name="succesful_dish_pick_up">Смачного!</string>
-    <string name="failed_dish_pick_up">Щось пішло не так при відкритті холодильника. Спробуйте ще!</string>
+    <string name="succesful_order_pick_up">Сподіваємося, це буде коханням з першого погляду!</string>
+    <string name="failed_order_pick_up">Щось пішло не так при відкритті комірки. Спробуйте ще!</string>
 
     <string name="header_add_order">Нове замовлення</string>
-    <string name="select_filial">Оберіть Ваш офіс</string>
-    <string name="select_dish">Оберіть страву для замовлення</string>
+    <string name="select_shop">Оберіть магазин для покупок</string>
+    <string name="select_category">Оберіть категорію товарів</string>
+    <string name="select_good">Оберіть товар</string>
+    <string name="select_counter">Оберіть точку видачі для отримання</string>
     <string name="input_count">Кількість (шт.):</string>
     <string name="total">Вартість замовлення:</string>
     <string name="make_order">Замовити!</string>

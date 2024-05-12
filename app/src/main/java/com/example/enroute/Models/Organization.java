@@ -1,5 +1,7 @@
 package com.example.enroute.Models;
 
+import androidx.annotation.NonNull;
+
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -98,4 +100,12 @@ public class Organization {
     private User manager;
     private List<PickupCounter> counters;
     private List<Good> goods;
+
+    @NonNull
+    @Override
+    public String toString() {
+        return this.name
+                + ", "
+                + this.description;
+    }
 }

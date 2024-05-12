@@ -1,5 +1,7 @@
 package com.example.enroute.Models;
 
+import androidx.annotation.NonNull;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -107,4 +109,10 @@ public class PickupCounter {
     private UUID organizationId;
     private Organization ownerOrganization;
     private List<Cell> cells;
+
+    @NonNull
+    @Override
+    public String toString() {
+        return this.address + " (" + this.placementDescription + ")";
+    }
 }

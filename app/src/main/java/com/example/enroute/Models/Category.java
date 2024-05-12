@@ -1,5 +1,7 @@
 package com.example.enroute.Models;
 
+import androidx.annotation.NonNull;
+
 import java.util.UUID;
 
 public class Category {
@@ -26,4 +28,10 @@ public class Category {
 
     private UUID id;
     private String name;
+
+    @NonNull
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }

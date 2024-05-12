@@ -106,13 +106,16 @@ public class CustomerHomeActivity extends AppCompatActivity {
 
     private void fulfillOrder(Order order) {
         ODataService<Order> t = new ODataService<Order>(Order.class, this);
-        order.setStatus(Status.Fulfilled);
+
         try {
-            t.update(ODataEndpointsNames.ORDERS, order.getId().toString(), order);
-            Toast.makeText(getApplicationContext(), getResources().getString(R.string.succesful_dish_pick_up), Toast.LENGTH_SHORT).show();
+            Order initOrder = t.getById(ODataEndpointsNames.ORDERS, order.getId(), null);
+            initOrder.setStatus(Status.Fulfilled);
+
+            t.update(ODataEndpointsNames.ORDERS, initOrder.getId().toString(), initOrder);
+            Toast.makeText(getApplicationContext(), getResources().getString(R.string.succesful_order_pick_up), Toast.LENGTH_SHORT).show();
             restartActivity();
         } catch (IOException e) {
-            Toast.makeText(getApplicationContext(), getResources().getString(R.string.failed_dish_pick_up), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), getResources().getString(R.string.failed_order_pick_up), Toast.LENGTH_SHORT).show();
         }
     }
 

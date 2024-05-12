@@ -21,12 +21,6 @@ public class Order {
         this.status = status;
     }
 
-    public Order(UUID customerId, UUID assignedCellId, List<OrderItem> items) {
-        this.customerId = customerId;
-        this.assignedCellId = assignedCellId;
-        this.items = items;
-    }
-
     public UUID getId() {
         return id;
     }

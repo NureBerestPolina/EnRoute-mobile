@@ -38,12 +38,14 @@
     <string name="repeat_order">Repeat!</string>
     <string name="close">Close</string>
 
-    <string name="succesful_dish_pick_up">Enjoy your meal!</string>
-    <string name="failed_dish_pick_up">Something went wrong while opening the fridge. Try again!</string>
+    <string name="succesful_order_pick_up">Hope you will like it!</string>
+    <string name="failed_order_pick_up">Something went wrong while opening the counter cell. Try again!</string>
 
     <string name="header_add_order">Place order</string>
-    <string name="select_filial">Select company filial</string>
-    <string name="select_dish">Select a dish to order</string>
+    <string name="select_shop">Select a shop</string>
+    <string name="select_category">Select a category of goods to order</string>
+    <string name="select_good">Select good to order</string>
+    <string name="select_counter">Select a counter to deliver to</string>
     <string name="input_count">Amount (in items):</string>
     <string name="total">Order total:</string>
     <string name="make_order">Order now!</string>

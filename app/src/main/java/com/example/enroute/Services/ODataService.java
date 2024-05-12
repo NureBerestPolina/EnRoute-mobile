@@ -4,11 +4,20 @@ import android.content.Context;
 
 import com.example.enroute.Constants.Constants;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonPrimitive;
+import com.google.gson.JsonSerializationContext;
+import com.google.gson.JsonSerializer;
 
 import java.io.IOException;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 import java.util.UUID;
 
 import okhttp3.MediaType;
@@ -16,6 +25,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+
 
 public class ODataService<T> {
     private static final String BASE_URL = Constants.BASE_URL + "/odata";
@@ -51,7 +61,7 @@ public class ODataService<T> {
     }
 
     public T getById(String endpoint, UUID id, ODataQueryBuilder queryBuilder) throws IOException {
-        String url = BASE_URL + "/" + endpoint + "(" + id.toString() + ")";
+        String url = BASE_URL + "/" + endpoint + "/" + id.toString();
         if (queryBuilder != null) {
             url += "?" + queryBuilder.build();
         }
@@ -87,11 +97,12 @@ public class ODataService<T> {
     }
 
     public void update(String endpoint, String id, T entity) throws IOException {
+        Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").create();
         String json = gson.toJson(entity);
         RequestBody requestBody = RequestBody.create(json, MediaType.parse("application/json"));
 
         Request request = new Request.Builder()
-                .url(BASE_URL + "/" + endpoint + "(" + id + ")")
+                .url(BASE_URL + "/" + endpoint + "/" + id)
                 .put(requestBody)
                 .build();
 

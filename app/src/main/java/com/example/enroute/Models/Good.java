@@ -1,5 +1,7 @@
 package com.example.enroute.Models;
 
+import androidx.annotation.NonNull;
+
 import java.util.UUID;
 
 public class Good {
@@ -136,4 +138,14 @@ public class Good {
     private Category category;
     private UUID organizationId;
     private Organization organization;
+
+    @NonNull
+    @Override
+    public String toString() {
+        return this.name
+                + " ("
+                + this.price
+                + ") "
+                + this.description;
+    }
 }
