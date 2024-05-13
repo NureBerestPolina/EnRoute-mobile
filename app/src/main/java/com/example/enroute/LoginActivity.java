@@ -31,10 +31,10 @@ public class LoginActivity extends AppCompatActivity {
         emailInput = (EditText) findViewById(R.id.login_email_input);
         passwordInput = (EditText) findViewById(R.id.login_password_input);
 
-        /*emailInput.setText("eater@gmail.com");
-        passwordInput.setText("Ja17nuary");*/
-        emailInput.setText("customer@ukr.net");
-        passwordInput.setText("customer123!");
+        emailInput.setText("organization@gmail.com");
+        passwordInput.setText("organization123!");
+        //emailInput.setText("customer@ukr.net");
+        //passwordInput.setText("customer123!");
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -53,10 +53,9 @@
     <string name="failed_order">Something went wrong. Try again!</string>
     <string name="pick_up_in_fridge">Pick up in fridge:</string>
 
-    <string name="header_supplier_home">Supplies needed</string>
-    <string name="fridge_placement">Fridge placement description: </string>
-    <string name="no_supplies_needed">There are currently no fridges, where the supply is needed.</string>
-    <string name="incorrect_number_format">Incorrect number format. Input an integer value, please!</string>
-    <string name="approve">Finish </string>
-    <string name="input_amont_title">Input delivered amount of dish</string>
+    <string name="header_manager_home">Deliveries needed</string>
+    <string name="counter_placement">Counter placement description: </string>
+    <string name="no_deliveries_needed">There are currently no counters, where the delivery is needed.</string>
+    <string name="approve">Finish delivery</string>
+    <string name="open_key">Open code 🔒 </string>
 </resources>
