@@ -64,9 +64,9 @@ public class CustomerHomeActivity extends AppCompatActivity {
         getRecommedationsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent recommendations = new Intent(CustomerHomeActivity.this, RecommendationsActivity.class);
-                //startActivity(recommendations);
-                //finish();
+                Intent recommendations = new Intent(CustomerHomeActivity.this, RecommendationsActivity.class);
+                startActivity(recommendations);
+                finish();
             }
         });
 

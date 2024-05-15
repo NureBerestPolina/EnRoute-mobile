@@ -53,6 +53,8 @@
     <string name="failed_order">Щось пішло не так. Спробуйте ще!</string>
     <string name="pick_up_in_fridge">Заберіть в холодильнику:</string>
 
+    <string name="header_recomendations">Час замовити 🔥</string>
+
     <string name="header_manager_home">Потрібно доставити</string>
     <string name="counter_placement">Опис розміщення точки видачі: </string>
     <string name="no_deliveries_needed">Наразі немає замовлень для здійснення доставок до точок видачі.</string>

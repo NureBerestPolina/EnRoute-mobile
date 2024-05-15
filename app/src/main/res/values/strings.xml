@@ -53,6 +53,8 @@
     <string name="failed_order">Something went wrong. Try again!</string>
     <string name="pick_up_in_fridge">Pick up in fridge:</string>
 
+    <string name="header_recomendations">Time to repeat 🔥</string>
+
     <string name="header_manager_home">Deliveries needed</string>
     <string name="counter_placement">Counter placement description: </string>
     <string name="no_deliveries_needed">There are currently no counters, where the delivery is needed.</string>

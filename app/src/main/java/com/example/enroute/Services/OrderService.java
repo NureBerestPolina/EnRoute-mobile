@@ -8,12 +8,15 @@ import android.widget.Spinner;
 
 import com.example.enroute.Models.Category;
 import com.example.enroute.Models.Good;
+import com.example.enroute.Models.Order;
 import com.example.enroute.Models.Organization;
 import com.example.enroute.Models.PickupCounter;
 import com.example.enroute.RequestModels.MakeOrderRequest;
 import com.google.gson.Gson;
 
 import java.io.IOException;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.List;
 import java.util.UUID;
 
@@ -96,5 +99,53 @@ public class OrderService {
                 throw new IOException("Unexpected code " + response);
             }
         }
+    }
+
+    public List<Good> getOrderRecommendations(UUID userId) throws IOException {
+        String url = BASE_URL + "/order-recommendations/" + userId.toString();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .build();
+
+        try (Response response = httpClient.newCall(request).execute()) {
+            if (!response.isSuccessful()) {
+                throw new IOException("Unexpected code " + response);
+            }
+
+            String responseBody = response.body().string();
+            return parseResponseList(responseBody);
+        }
+    }
+
+    private List<Good> parseResponseList(String json) {
+        // Manually extract the "value" array from the JSON string
+        int startIndex = json.indexOf("[");
+        if (startIndex == -1) {
+            return null; // "value" array not found
+        }
+
+        int endIndex = json.lastIndexOf("]");
+        if (endIndex == -1) {
+            return null; // Unable to find the end of the "value" array
+        }
+
+        String valueArrayJson = json.substring(startIndex, endIndex + 1);
+
+        Type listType = new ParameterizedType() {
+            public Type[] getActualTypeArguments() {
+                return new Type[]{Good.class};
+            }
+
+            public Type getRawType() {
+                return List.class;
+            }
+
+            public Type getOwnerType() {
+                return null;
+            }
+        };
+
+        return gson.fromJson(valueArrayJson, listType);
     }
 }

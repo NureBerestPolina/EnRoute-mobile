@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".CustomerActivities.RecommendationsActivity"
+            android:exported="false" />
+        <activity
             android:name=".CustomerActivities.MakeOrderActivity"
             android:exported="false" />
         <activity
